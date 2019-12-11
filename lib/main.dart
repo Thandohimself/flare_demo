@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColorDark: Colors.amber,
       ),
+      
       home: FlareDemo()
     );
   }
