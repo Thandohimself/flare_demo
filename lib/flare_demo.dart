@@ -1,4 +1,4 @@
-import 'package:flare_flutter/flare_actor.dart';
+import 'package:flare_demo/smart_flare_animation.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -8,22 +8,15 @@ class FlareDemo extends StatefulWidget {
 }
 
 class _FlareDemoState extends State<FlareDemo> {
-  bool isOpen = false;
+
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.amber,
-      body: GestureDetector(
-        onTap: (){
-          setState(() {
-            isOpen = !isOpen;
-          });
-        },
-        child: FlareActor('assets/button-animation.flr',
-            animation: isOpen ? 'activate' : 'deactivate',
-        ),
-      ),
+      body: Align (
+        alignment: Alignment.bottomCenter,
+          child: SmartFlareAnimation(),),
     );
   }
 }
