@@ -49,7 +49,6 @@ class _FlareDemoState extends State<FlareDemo> {
         animationHeight / 2,
         animationWidth,
         animationHeight / 2),
-        debugArea: true,
         animationsToCycle:  ['activate', 'deactivate'],
         onAreaTapped: (){
         print('Toggle animation!');
